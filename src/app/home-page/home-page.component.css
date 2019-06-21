@@ -1,0 +1,9 @@
+.background-photo {
+	background-image: url('../../assets/img/background.png');
+	background-color: #ffffff;
+	color: #ffffff;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}

@@ -1,0 +1,21 @@
+  <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center">
+  <form class="form-inline my-4">
+  <input name="searchInput" class="form-control w-75" placeholder="Search" #searchInput="ngModel" [(ngModel)]="searchText">
+  <button class="btn btn-outline-dark" (click)="searchText=''"><i class="fa fa-times"></i></button>
+</form>
+</div>
+<ng-container *ngFor="let contact of contactsArray">
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="card my-4 d-flex flex-column align-items-center p-3" *ngIf="filterContact(contact)">
+      <img class="card-img-top" style="width:60px;" src="../assets/img/user.png" alt="Generic placeholder image">
+      <div class="card-body text-center">
+        <h5 class="card-title">{{contact.firstName}} {{contact.lastName}}</h5>
+        <p class="card-text">{{contact.mobile}}</p>
+        <button class="btn btn-primary mr" [ngClass]="{'btn-danger': contact.favorite}" (click)="contactService.favoriteContact(contact)"><i class="fa fa-heart"></i></button>
+        <button class="btn btn-primary mx-2" (click)="contactService.populateForm(contact)"><i class="fa fa-pencil"></i></button>
+        <button class="btn btn-primary" (click)="onDelete(contact.$key)"><i class="fa fa-times"></i></button>
+      </div>
+    </div>
+  </div>
+</ng-container>
+<div class="alert alert-danger" *ngIf="showDeleteMessage">Deleted successfully</div>

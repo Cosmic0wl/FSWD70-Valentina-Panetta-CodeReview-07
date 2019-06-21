@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+/* COLOR PALETTE */
+
+/* pink */
+.bg-pink {
+	background-color: #f8d5f0;
+}
+
+.text-pink {
+	color: #f8d5f0;
+}
+
+/* turquoise */
+
+.bg-turquoise {
+	background-color: #58d5d3;
+}
+
+.text-turquoise {
+	color: #58d5d3;
+}
+
+/* blue */
+
+.bg-blue {
+	background-color: #41a4c3;
+}
+
+.text-blue {
+	color: #41a4c3;
+}
+
+/* darkblue */
+
+.bg-darkblue {
+	background-color: #3f4b83;
+}
+
+.text-darkblue {
+	color: #3f4b83;
+}
