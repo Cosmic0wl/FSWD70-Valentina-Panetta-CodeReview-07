@@ -1,27 +1,18 @@
 <nav class="navbar navbar-expand-lg border-bottom border-primary">
-  <button class="btn btn-primary">
-  <a class="navbar-brand text-white font-weight-bold" href="#"><img src="../../assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">PhoneBook</a>
-</button>
-
+  <a  class="navbar-brand btn font-weight-bold text-primary" routerLink="/home" routerLinkActive="btn-outline-primary" href="#"><img src="../../assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">PhoneBook</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <i class="d-lg-none navbar-toggler-icon fa fa-arrow-down text-primary"></i>
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <button class="btn btn-outline-primary ml-2">
-        <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
-      </button>
+      <li class="nav-item">
+        <a class="nav-link btn" routerLink="/home" routerLinkActive="btn-primary">Home</a>
       </li>
       <li class="nav-item">
-        <button class="btn btn-outline-primary ml-2">
-        <a class="nav-link" routerLink="/importantNumbers">Favorite Numbers</a>
-      </button>
+        <a class="nav-link btn" routerLink="/importantNumbers" routerLinkActive="btn-primary">Favorite Numbers</a>
       </li>
       <li class="nav-item">
-        <button class="btn btn-outline-primary ml-2">
-        <a class="nav-link" routerLink="/form">My Phone Book</a>
-      </button>
+        <a class="nav-link btn" routerLink="/form" routerLinkActive="btn-primary">My Phone Book</a>
       </li>
     </ul>
   </div>
