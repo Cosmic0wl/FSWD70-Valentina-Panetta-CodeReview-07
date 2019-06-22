@@ -1,18 +1,18 @@
 <nav class="navbar navbar-expand-lg border-bottom border-primary">
-  <a  class="navbar-brand btn font-weight-bold text-primary" routerLink="/home" routerLinkActive="btn-outline-primary" href="#"><img src="../../assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">PhoneBook</a>
+  <a  class="navbar-brand btn font-weight-bold text-primary" routerLink="/home" [routerLinkActive]="['btn-outline-primary', 'text-danger']" href="#"><img src="../../assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">PhoneBook</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <i class="d-lg-none navbar-toggler-icon fa fa-arrow-down text-primary"></i>
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link btn" routerLink="/home" routerLinkActive="btn-primary">Home</a>
+        <a class="nav-link btn" routerLink="/home" [routerLinkActive]="['btn-primary', 'text-white']">Home</a>
+      </li>
+      <li class="nav-item mx-3">
+        <a class="nav-link btn" routerLink="/importantNumbers"  [routerLinkActive]="['btn-primary', 'text-white']">Favorite Numbers</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn" routerLink="/importantNumbers" routerLinkActive="btn-primary">Favorite Numbers</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link btn" routerLink="/form" routerLinkActive="btn-primary">My Phone Book</a>
+        <a class="nav-link btn" routerLink="/form"  [routerLinkActive]="['btn-primary', 'text-white']">My Phone Book</a>
       </li>
     </ul>
   </div>
