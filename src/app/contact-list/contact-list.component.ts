@@ -44,7 +44,7 @@ export class ContactListComponent implements OnInit {
     });
   }
 
-  // filters based on last name
+  // filters based on last name and then first name
   filterContact(contact){
   	return contact.lastName.toLowerCase().startsWith(this.searchText.toLowerCase()) || contact.firstName.toLowerCase().startsWith(this.searchText.toLowerCase());
   }

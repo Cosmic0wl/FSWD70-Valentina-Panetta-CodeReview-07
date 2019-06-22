@@ -23,10 +23,10 @@ export class ContactComponent implements OnInit {
   	if(this.contactService.form.valid) {
   		if(this.contactService.form.get('$key').value == null) {
   			this.contactService.addContact(this.contactService.form.value);
+        this.showSuccessMessage = true;
+        setTimeout(()=> this.showSuccessMessage = false,3000);
   		} else {
   			this.contactService.editContact(this.contactService.form.value);
-  			this.showSuccessMessage = true;
-  			setTimeout(()=> this.showSuccessMessage = false,3000);
   			this.submitted = false;
   			this.contactService.form.reset();
   		}
