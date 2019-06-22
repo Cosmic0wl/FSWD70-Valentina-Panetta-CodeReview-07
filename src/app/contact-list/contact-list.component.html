@@ -7,7 +7,7 @@
 <ng-container *ngFor="let contact of contactsArray">
   <div class="col-lg-4 col-md-6 col-sm-12">
     <div class="card my-4 d-flex flex-column align-items-center p-3" *ngIf="filterContact(contact)">
-      <img class="card-img-top" style="width:60px;" src="../assets/img/user.png" alt="Generic placeholder image">
+      <img class="card-img-top img-fluid" src="../assets/img/usr.png" alt="user">
       <div class="card-body text-center">
         <h5 class="card-title">{{contact.firstName}} {{contact.lastName}}</h5>
         <p class="card-text">{{contact.mobile}}</p>

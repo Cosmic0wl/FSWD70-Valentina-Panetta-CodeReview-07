@@ -10,8 +10,11 @@ import { ContactListComponent } from '../contact-list/contact-list.component';
 export class ImportantNumbersComponent implements OnInit {
 	favContacts = [];
 	showDeleteMessage: boolean;
+  public titleHeading: string;
 
-  constructor(public contactService: ContactService) { }
+  constructor(public contactService: ContactService) { 
+    this.titleHeading = "My Favorite Contacts";
+  }
 
   ngOnInit() {
   	  	this.contactService.getContactData().subscribe(

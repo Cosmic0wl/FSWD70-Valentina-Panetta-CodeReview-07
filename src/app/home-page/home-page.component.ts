@@ -14,7 +14,7 @@ export class HomePageComponent implements OnInit {
   constructor() { 
 	  this.heroHeading = "PhoneBook";
 	  this.heroText = "Keep your contacts in one place";
-	  this.heroBtnText = "Learn More";
+	  this.heroBtnText = "Go to App";
   }
 
   ngOnInit() {
