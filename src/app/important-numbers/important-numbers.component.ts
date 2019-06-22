@@ -9,7 +9,6 @@ import { ContactListComponent } from '../contact-list/contact-list.component';
 })
 export class ImportantNumbersComponent implements OnInit {
 	favContacts = [];
-	showDeleteMessage: boolean;
   public titleHeading: string;
 
   constructor(public contactService: ContactService) { 

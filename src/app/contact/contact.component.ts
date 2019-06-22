@@ -8,12 +8,15 @@ import { ContactService } from "../shared/contact.service";
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-
-  constructor(public contactService: ContactService) { }
   submitted: boolean;
   formControls = this.contactService.form.controls;
   showSuccessMessage: boolean;
+  public title: string;
 
+  constructor(public contactService: ContactService) { 
+    this.title = "My PhoneBook";
+  }
+  
   ngOnInit() {
   }
 
